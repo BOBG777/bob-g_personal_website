@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.myButton, .disconnectBtn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.myButton {
+  background-color: #0070f3;
+}
+
+.myButton:hover {
+  background-color: #0051bf;
+  transform: translateY(-2px);
+  box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+}
+
+.disconnectBtn {
+    background-color: #e74c3c;
+    margin-top: 10px;
+}
+
+.disconnectBtn:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0,0,0,0.15);
+}
+
+.statusBar {
+    margin-top: 30px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    color: #333;
+    width: 250px; 
+    text-align: center;
+    white-space: normal; 
+    overflow-x: auto;
+}
