@@ -35,11 +35,10 @@ class Home extends React.Component<{}, State> {
             const accounts = await web3.eth.getAccounts();
             this.setState({ web3, provider, account: accounts[0] });
         } catch (error) {
-            if (error.message === "User Rejected") {
+            if ((error as any).message === "User Rejected") {
                 alert("Connection to Ethereum wallet was rejected by the user.");
             } else {
                 console.error("An error occurred:", error);
-                alert("An error occurred while trying to connect to your Ethereum wallet.");
             }
         }
     }
